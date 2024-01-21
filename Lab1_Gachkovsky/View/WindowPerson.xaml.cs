@@ -98,10 +98,9 @@ namespace Lab1_Gachkovsky.View
                     + person.Id + " ]", "Предупреждение", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
 
                 if (result == MessageBoxResult.OK) vmPerson.ListPerson.Remove(person);
-                else MessageBox.Show("Необходимо выбрать клиента для удаления", "Предупреждение",
-                    MessageBoxButton.OK, MessageBoxImage.Warning);
-
             }
+            else MessageBox.Show("Необходимо выбрать клиента для удаления", "Предупреждение",
+            MessageBoxButton.OK, MessageBoxImage.Warning);
         }
     }
 }
